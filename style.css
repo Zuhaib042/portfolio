@@ -19,7 +19,7 @@ body {
   height: 7vh;
   justify-content: space-between;
   align-items: center;
-  padding: 0.4rem 1.2rem 0;
+  padding: 0.4rem 1rem 0;
 }
 .logo {
   color: var(--primary-color);
@@ -29,5 +29,52 @@ body {
 }
 #menu {
   width: 2rem;
-  padding-top: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.hero {
+  height: 100vh;
+  background-image: url(./images/header-shapes-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+@media (min-width: 420px) {
+  .hero {
+    background-size: cover;
+  }
+}
+.hero-title {
+  color: var(--headings-color);
+  font-size: 1.5rem;
+}
+.hero-para {
+  color: var(--text-color);
+  font-weight: 400;
+  padding-top: 0.8rem;
+}
+.hero-content {
+  padding: 5rem 12px 0;
+}
+.hero-social {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding-top: 0.5rem;
+}
+.hero-icons {
+  display: flex;
+  max-width: 12rem;
+  justify-content: space-between;
+  padding-top: 0.8rem;
+}
+.hero-icons a {
+  transition: all 0.5s;
+}
+.hero-icons a:hover {
+  transform: scale(1.2);
+  box-shadow: 0 1px 4px 2px #6070ff;
 }
