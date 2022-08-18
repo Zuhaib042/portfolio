@@ -85,11 +85,12 @@ body {
   padding-top: 0.8rem;
 }
 
-.hero-icons a {
+.hero-icons li {
   transition: all 0.5s;
+  list-style: none;
 }
 
-.hero-icons a:hover {
+.hero-icons li:hover {
   transform: scale(1.2);
   box-shadow: 0 1px 4px 2px #6070ff;
 }
