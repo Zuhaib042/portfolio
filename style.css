@@ -112,6 +112,7 @@ body {
   display: grid;
   grid-template-columns: 1 / -1;
   margin: 114px 24px;
+  row-gap: 24px;
 }
 
 .works-title {
@@ -119,12 +120,12 @@ body {
   font-weight: 700;
   color: var(--headings-color);
   text-align: center;
-  margin: 1.6rem;
 }
 
 .card {
   border: 0.5px solid rgb(187, 187, 187);
   border-radius: 12px;
+  /* margin: 24px 0; */
 }
 
 .card-image {
