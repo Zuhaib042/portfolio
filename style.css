@@ -21,6 +21,7 @@ body {
   --text-light: #7a869a;
   --btn-background: #ebebff;
 }
+
 .d-flex {
   display: flex;
 }
@@ -103,6 +104,15 @@ body {
   max-width: 12rem;
   justify-content: space-between;
   padding-top: 0.8rem;
+}
+
+.tags > li {
+  background-color: var(--btn-background);
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-weight: 300;
+  font-size: 13px;
+  color: var(--primary-color);
 }
 
 .hero-icons li {
@@ -193,15 +203,6 @@ body {
 .tags {
   max-width: 203px;
   justify-content: space-between;
-}
-
-.tags li {
-  background-color: var(--btn-background);
-  border-radius: 8px;
-  padding: 4px 12px;
-  font-weight: 300;
-  font-size: 13px;
-  color: var(--primary-color);
 }
 
 .action {
