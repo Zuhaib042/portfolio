@@ -16,6 +16,20 @@ body {
   --icons-color: #505f79;
   --headings-color: #172b4d;
   --text-color: #344563;
+  --light-color: #c1c7d0;
+  --text-light: #7a869a;
+  --btn-background: #ebebff;
+}
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.list-none {
+  list-style: none;
 }
 
 #nav {
@@ -44,8 +58,6 @@ body {
   background-image: url(./images/header-shapes-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  display: flex;
-  flex-direction: column;
 }
 
 @media (min-width: 420px) {
@@ -79,7 +91,6 @@ body {
 }
 
 .hero-icons {
-  display: flex;
   max-width: 12rem;
   justify-content: space-between;
   padding-top: 0.8rem;
@@ -93,4 +104,123 @@ body {
 .hero-icons li:hover {
   transform: scale(1.2);
   box-shadow: 0 1px 4px 2px #6070ff;
+}
+
+/* works section */
+
+.works {
+  display: grid;
+  grid-template-columns: 1 / -1;
+  margin: 114px 24px;
+}
+
+.works-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--headings-color);
+  text-align: center;
+  margin: 1.6rem;
+}
+
+.card {
+  border: 0.5px solid rgb(187, 187, 187);
+  border-radius: 12px;
+}
+
+.card-image {
+  min-width: 295px;
+  height: 220px;
+  margin: 16px;
+  border-radius: 8px;
+}
+
+.card-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  margin: 0 16px 16px;
+}
+
+.primary-text h2 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.primary-text p {
+  margin: 8px 0;
+  font-weight: 300;
+  color: var(--text-color);
+  font-size: 15px;
+}
+
+.circle {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: var(--light-color);
+}
+
+.frame {
+  max-width: 236px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.frame h6 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.frame p {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.tags {
+  max-width: 203px;
+  justify-content: space-between;
+}
+
+.tags li {
+  background-color: var(--btn-background);
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-weight: 300;
+  font-size: 13px;
+  color: var(--primary-color);
+}
+
+.action {
+  margin: 12px 0;
+}
+
+.btn {
+  padding: 12px;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid var(--secondary-color);
+  background-color: white;
+  color: var(--primary-color);
+  letter-spacing: 3%;
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.btn:active {
+  background-color: #2230d2;
+}
+
+.btn:disabled {
+  background-color: white;
+  color: var(--light-color);
+  border: 1px solid var(--light-color);
 }

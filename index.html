@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <nav id="nav">
+        <nav id="nav" class="d-flex">
             <a href="#" class="logo">
                 <p>Bonjour</p>
             </a>
@@ -19,7 +19,8 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <!-- hero section -->
+        <section class="hero d-flex flex-column">
             <div class="hero-content">
                 <div class="hero-title ">
                     <h1>Hello there <br> I'm Zuhaib <br> Glad to see you!</h1>
@@ -38,7 +39,7 @@
                     <p class="hero-social">
                         let's connect
                     </p>
-                    <ul class="hero-icons">
+                    <ul class="hero-icons d-flex">
                         <li>
                             <a target="_blank" href="https://twitter.com/Zuhaib042" rel="noopener noreferrer"><img
                                     src="./images/twitter.svg" alt="twitter-logo"></a>
@@ -60,6 +61,39 @@
                     </ul>
                 </div>
             </div>
+        </section>
+        <!-- works section -->
+        <section class="works">
+            <h1 class="works-title">My Projects</h1>
+            <article class="d-flex flex-column card">
+                <div class="card-image">
+                    <img src="./images/Snapshoot Portfolio.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <div class="primary-text">
+                        <h2>Tonic</h2>
+                        <div class="frame d-flex">
+                            <h6>CANOPY</h6>
+                            <div class="circle"></div>
+                            <p>Back End Dev</p>
+                            <div class="circle"></div>
+                            <p>2015</p>
+                        </div>
+                        <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                    </div>
+                    <ul class="tags d-flex list-none">
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                    </ul>
+                    <div class="action">
+                        <button class="btn">See Project</button>
+                    </div>
+                </div>
+            </article>
+            <article></article>
+            <article></article>
+            <article></article>
         </section>
     </main>
 </body>
