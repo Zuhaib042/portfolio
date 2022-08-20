@@ -2,7 +2,7 @@
 
 # Portfolio (Mobile First)
 
-This is a Microverse Portfolio Project. I have created it initially with Mobile First approach. I have created it with HTML CSS . In CSS I used mainly FlexBox for layout to make it responsive.
+This is a Microverse Portfolio Project. I have created it initially with Mobile First approach. I have created it with HTML CSS . In CSS I used mainly FlexBox and Grid for layout to make it responsive.
 
 ## Built With
 
@@ -18,7 +18,7 @@ This is a Microverse Portfolio Project. I have created it initially with Mobile 
 To get a local copy up and running follow these simple example steps.
 
 Run
-git clone git@github.com:Bondok6/Portfolio.git
+git clone https://github.com/Zuhaib042/portfolio.git
 
 ### Prerequisites
 
