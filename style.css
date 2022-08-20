@@ -110,8 +110,8 @@ body {
   background-color: var(--btn-background);
   border-radius: 8px;
   padding: 4px 12px;
-  font-weight: 300;
-  font-size: 13px;
+  font-weight: 500;
+  font-size: 12px;
   color: var(--primary-color);
 }
 
@@ -167,11 +167,12 @@ body {
 .primary-text h2 {
   font-weight: 700;
   font-size: 32px;
+  color: var(--headings-color);
 }
 
 .primary-text p {
   margin: 8px 0;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--text-color);
   font-size: 15px;
 }
@@ -180,7 +181,7 @@ body {
   height: 8px;
   width: 8px;
   border-radius: 50%;
-  background-color: var(--light-color);
+  background-color: #c1c7d0;
 }
 
 .frame {
@@ -191,12 +192,14 @@ body {
 }
 
 .frame h6 {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
+  color: var(--text-color);
 }
 
 .frame p {
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 600;
   color: var(--text-light);
 }
 
