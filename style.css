@@ -113,6 +113,8 @@ body {
   font-weight: 500;
   font-size: 12px;
   color: var(--primary-color);
+  float: left;
+  margin-left: 10px;
 }
 
 .hero-icons li {
@@ -204,12 +206,14 @@ body {
 }
 
 .tags {
-  max-width: 203px;
+  max-width: 260px;
   justify-content: space-between;
+  
 }
 
 .action {
   margin: 12px 0;
+  margin-left: 10px;
 }
 
 .btn {
