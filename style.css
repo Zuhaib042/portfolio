@@ -334,3 +334,7 @@ body {
   font-size: 15px;
   font-weight: 400;
 }
+
+.form-content {
+padding-top: 2rem;
+}
