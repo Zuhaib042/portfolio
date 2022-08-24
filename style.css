@@ -115,6 +115,10 @@ body {
   color: var(--primary-color);
 }
 
+.form-ul li {
+  list-style: none;
+}
+
 .hero-icons li {
   transition: all 0.5s;
   list-style: none;
@@ -287,10 +291,14 @@ body {
   justify-content: center;
 }
 
+.form-content {
+  padding-top: 2rem;
+}
+
 .form-content h2 {
   font-size: 40px;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   vertical-align: center;
 }
@@ -311,10 +319,6 @@ body {
   row-gap: 18px;
 }
 
-.form-ul li {
-  list-style: none;
-}
-
 .form input {
   width: 327px;
   padding: 15px 16px;
@@ -333,8 +337,4 @@ body {
   height: 170px;
   font-size: 15px;
   font-weight: 400;
-}
-
-.form-content {
-padding-top: 2rem;
 }
