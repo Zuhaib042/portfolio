@@ -249,6 +249,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   row-gap: 24px;
+  padding-bottom: 6rem;
 }
 
 .top {
@@ -275,7 +276,6 @@ body {
   background-size: cover;
   height: 779px;
   padding-bottom: 3rem;
-  margin-top: 5rem;
 }
 
 .form-container {
