@@ -153,7 +153,7 @@ body {
 
 .card-image {
   min-width: 295px;
-  height: 220px;
+  max-height: 220px;
   margin: 16px;
   border-radius: 8px;
 }
