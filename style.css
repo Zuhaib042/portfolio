@@ -39,8 +39,12 @@ body {
   height: 7vh;
   justify-content: space-between;
   align-items: center;
-  padding: 0.4rem 1rem 0;
+  padding: 26px 24px;
   background-color: white;
+}
+
+.nav-items {
+  display: none;
 }
 
 .logo {
@@ -152,8 +156,6 @@ body {
 }
 
 .card-image {
-  min-width: 295px;
-  max-height: 220px;
   margin: 16px;
   border-radius: 8px;
 }
@@ -278,7 +280,6 @@ body {
 #footer {
   background-image: url(./images/form-background1.jpg);
   background-size: cover;
-  height: 779px;
   padding-bottom: 3rem;
 }
 
@@ -337,4 +338,65 @@ body {
   height: 170px;
   font-size: 15px;
   font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  #nav {
+    padding: 26px 80px;
+    height: 72px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 1px 10px -5px grey;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .nav-items {
+    display: flex;
+    column-gap: 32px;
+  }
+
+  .nav-items li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .hero {
+    background-image: url(./images/header-back-desktop.svg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header-shapes {
+    background-image: url(./images/header-backN-desk.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 8rem;
+    padding-bottom: 9rem;
+  }
+
+  .hero-content {
+    padding: 0;
+    margin: 100px 140px 0;
+  }
+
+  .card {
+    flex-direction: row;
+  }
+
+  .card-image {
+    margin: 24px;
+  }
+  .card-image img {
+    height: 448px;
+    border-radius: 8px;
+  }
+
+  .card-content {
+    margin-top: 48px;
+  }
 }
