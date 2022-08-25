@@ -161,7 +161,7 @@ body {
 }
 
 .card-image img {
-  height: 100%;
+  height: auto;
   width: 100%;
   object-fit: cover;
 }
@@ -398,5 +398,18 @@ body {
 
   .card-content {
     margin-top: 48px;
+  }
+
+  .tags {
+    margin-top: 24px;
+  }
+
+  .action {
+    margin-top: 48px;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+    padding-left: 24px;
   }
 }
