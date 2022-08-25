@@ -289,9 +289,6 @@ body {
 
 .form-container {
   padding-top: 103px;
-  /* background-image: url(./images/form-back-New.png);
-  background-size: cover;
-  background-position: contain; */
   align-items: center;
   justify-content: center;
 }
@@ -391,6 +388,7 @@ body {
   .card-image {
     margin: 24px;
   }
+
   .card-image img {
     height: 448px;
     border-radius: 8px;
@@ -417,9 +415,11 @@ body {
     display: flex;
     margin: 142px 48px;
   }
+
   .top {
     max-width: 370px;
   }
+
   .skills {
     width: 100%;
   }
