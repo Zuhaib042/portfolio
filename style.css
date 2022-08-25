@@ -412,4 +412,19 @@ body {
     flex-direction: row-reverse;
     padding-left: 24px;
   }
+
+  .about-md {
+    display: flex;
+    margin: 142px 48px;
+  }
+  .top {
+    max-width: 370px;
+  }
+  .skills {
+    width: 100%;
+  }
+
+  .about-action {
+    margin-top: 24px;
+  }
 }
