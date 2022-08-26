@@ -39,8 +39,12 @@ body {
   height: 7vh;
   justify-content: space-between;
   align-items: center;
-  padding: 0.4rem 1rem 0;
+  padding: 26px 24px;
   background-color: white;
+}
+
+.nav-items {
+  display: none;
 }
 
 .logo {
@@ -152,14 +156,12 @@ body {
 }
 
 .card-image {
-  min-width: 295px;
-  max-height: 220px;
   margin: 16px;
   border-radius: 8px;
 }
 
 .card-image img {
-  height: 100%;
+  height: auto;
   width: 100%;
   object-fit: cover;
 }
@@ -276,23 +278,19 @@ body {
 /* form section */
 
 #footer {
-  background-image: url(./images/form-background1.jpg);
-  background-size: cover;
-  height: 779px;
+  background-color: var(--primary-color);
+  border-top-left-radius: 50px;
+  background-image: url(./images/form-background2.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
   padding-bottom: 3rem;
 }
 
 .form-container {
-  padding-top: 140px;
-  background-image: url(./images/form-back-New.png);
-  background-size: cover;
-  background-position: contain;
+  padding-top: 103px;
   align-items: center;
   justify-content: center;
-}
-
-.form-content {
-  padding-top: 2rem;
 }
 
 .form-content h2 {
@@ -337,4 +335,115 @@ body {
   height: 170px;
   font-size: 15px;
   font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  #nav {
+    padding: 26px 80px;
+    height: 72px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 1px 10px -5px grey;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .nav-items {
+    display: flex;
+    column-gap: 32px;
+  }
+
+  .nav-items li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .hero {
+    background-image: url(./images/header-back-desktop.svg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header-shapes {
+    background-image: url(./images/header-backN-desk.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 8rem;
+    padding-bottom: 9rem;
+  }
+
+  .hero-content {
+    padding: 0;
+    margin: 100px 140px 0;
+  }
+
+  .card {
+    flex-direction: row;
+  }
+
+  .card-image {
+    margin: 24px;
+  }
+
+  .card-image img {
+    height: 448px;
+    border-radius: 8px;
+  }
+
+  .card-content {
+    margin-top: 48px;
+  }
+
+  .tags {
+    margin-top: 24px;
+  }
+
+  .action {
+    margin-top: 48px;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+    padding-left: 24px;
+  }
+
+  .about-md {
+    display: flex;
+    margin: 142px 48px;
+  }
+
+  .top {
+    max-width: 370px;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  .about-action {
+    margin-top: 24px;
+  }
+
+  #footer {
+    background-image: url(./images/form-back2-desktop.svg);
+    background-position: center;
+    background-size: contain;
+  }
+
+  .form-ul {
+    row-gap: 27px;
+  }
+
+  .form-content p {
+    max-width: 570px;
+  }
+
+  .form input,
+  .form-textarea {
+    width: 447px;
+  }
 }
