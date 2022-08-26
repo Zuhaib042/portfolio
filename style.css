@@ -431,11 +431,17 @@ body {
 
   .card-image {
     margin: 24px;
+    overflow: hidden;
   }
 
   .card-image img {
     height: 448px;
     border-radius: 8px;
+    transition: all 0.7s;
+  }
+
+  .card-image img:hover {
+    transform: scale(1.4);
   }
 
   .card-content {
