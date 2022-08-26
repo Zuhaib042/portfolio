@@ -346,6 +346,14 @@ body {
     box-shadow: 0 1px 10px -5px grey;
   }
 
+  .logo {
+    transition: all 1s;
+  }
+
+  .logo:hover {
+    transform: rotateX(-180deg);
+  }
+
   #menu {
     display: none;
   }
@@ -362,10 +370,24 @@ body {
     font-weight: 500;
   }
 
+  .nav-items li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s;
+  }
+
+  .nav-items li a:hover::after {
+    width: 100%;
+  }
+
   .hero {
     background-image: url(./images/header-back-desktop.svg);
     background-size: cover;
     background-position: center;
+    overflow: hidden;
   }
 
   .header-shapes {
@@ -381,17 +403,49 @@ body {
     margin: 100px 140px 0;
   }
 
+  .hero-title {
+    margin-left: 33.3%;
+    transform: translateX(200%);
+    opacity: 0;
+    animation: slide-in-anim 1.5s ease-out forwards;
+  }
+
+  @keyframes slide-in-anim {
+    20% {
+      opacity: 0;
+    }
+
+    60% {
+      transform: translateX(-45%);
+    }
+
+    75% {
+      transform: translateX(-52%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(-50%);
+    }
+  }
+
   .card {
     flex-direction: row;
   }
 
   .card-image {
     margin: 24px;
+    overflow: hidden;
   }
 
   .card-image img {
     height: 448px;
     border-radius: 8px;
+    transition: all 0.7s;
+  }
+
+  .card-image img:hover {
+    transform: scale(1.2);
   }
 
   .card-content {
