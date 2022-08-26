@@ -404,7 +404,7 @@ body {
   }
 
   .hero-title {
-    margin-left: 35%;
+    margin-left: 33.3%;
     transform: translateX(200%);
     opacity: 0;
     animation: slide-in-anim 1.5s ease-out forwards;
@@ -414,17 +414,21 @@ body {
     20% {
       opacity: 0;
     }
+
     60% {
       transform: translateX(-45%);
     }
+
     75% {
       transform: translateX(-52%);
     }
+
     100% {
       opacity: 1;
       transform: translateX(-50%);
     }
   }
+
   .card {
     flex-direction: row;
   }
