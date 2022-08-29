@@ -39,6 +39,9 @@ body {
   height: 7vh;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 1px 10px -5px grey;
   padding: 26px 24px;
   background-color: white;
 }
@@ -66,12 +69,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 5rem;
 }
 
 .header-shapes {
   background-image: url(./images/header-shapes-mobile.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: right;
 }
 
 @media (min-width: 420px) {
@@ -108,6 +113,7 @@ body {
   max-width: 12rem;
   justify-content: space-between;
   padding-top: 0.8rem;
+  padding-top: 1rem;
 }
 
 .tags > li {
@@ -250,20 +256,24 @@ body {
 .about {
   display: grid;
   grid-template-columns: 1 / -1;
-  padding: 2rem 0;
+  padding: 6rem 0;
   background-image: url(./images/base-about.svg);
   background-size: cover;
   background-repeat: no-repeat;
   row-gap: 24px;
-  padding-bottom: 6rem;
 }
 
 .top {
   margin: 0 24px;
+  padding: 3rem 0;
 }
 
 .skills {
   margin: 0 24px;
+}
+
+.about-action {
+  padding-top: 1rem;
 }
 
 .skill-list {
@@ -341,8 +351,7 @@ body {
   #nav {
     padding: 26px 80px;
     height: 72px;
-    position: fixed;
-    width: 100%;
+    z-index: 100;
     box-shadow: 0 1px 10px -5px grey;
   }
 
@@ -388,12 +397,13 @@ body {
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 1rem;
   }
 
   .header-shapes {
     background-image: url(./images/header-backN-desk.png);
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
     padding-top: 8rem;
     padding-bottom: 9rem;
   }

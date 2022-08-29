@@ -13,6 +13,10 @@ This is a Microverse Portfolio Project. I have created it initially with Mobile 
 - Technologies used
   linters, Git , Github.
 
+## Live Demo
+
+[Zuhaib's Portfolio](https://zuhaib042.github.io/portfolio/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
