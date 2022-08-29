@@ -123,6 +123,10 @@ body {
   list-style: none;
 }
 
+.hero-icons {
+  padding-top: 1rem;
+}
+
 .hero-icons li {
   transition: all 0.5s;
   list-style: none;
@@ -250,20 +254,24 @@ body {
 .about {
   display: grid;
   grid-template-columns: 1 / -1;
-  padding: 2rem 0;
+  padding: 6rem 0;
   background-image: url(./images/base-about.svg);
   background-size: cover;
   background-repeat: no-repeat;
   row-gap: 24px;
-  padding-bottom: 6rem;
 }
 
 .top {
   margin: 0 24px;
+  padding: 3rem 0;
 }
 
 .skills {
   margin: 0 24px;
+}
+
+.about-action {
+  padding-top: 1rem;
 }
 
 .skill-list {
