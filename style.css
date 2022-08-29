@@ -75,7 +75,8 @@ body {
 .header-shapes {
   background-image: url(./images/header-shapes-mobile.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: right;
 }
 
 @media (min-width: 420px) {
@@ -353,9 +354,7 @@ body {
   #nav {
     padding: 26px 80px;
     height: 72px;
-    position: fixed;
     z-index: 100;
-    width: 100%;
     box-shadow: 0 1px 10px -5px grey;
   }
 
@@ -402,12 +401,12 @@ body {
     background-position: center;
     overflow: hidden;
     padding-top: 0;
+    padding-bottom: 1rem;
   }
 
   .header-shapes {
     background-image: url(./images/header-backN-desk.png);
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
     padding-top: 8rem;
     padding-bottom: 9rem;
   }
