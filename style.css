@@ -39,6 +39,9 @@ body {
   height: 7vh;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 1px 10px -5px grey;
   padding: 26px 24px;
   background-color: white;
 }
@@ -66,6 +69,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 5rem;
 }
 
 .header-shapes {
@@ -350,6 +354,7 @@ body {
     padding: 26px 80px;
     height: 72px;
     position: fixed;
+    z-index: 100;
     width: 100%;
     box-shadow: 0 1px 10px -5px grey;
   }
