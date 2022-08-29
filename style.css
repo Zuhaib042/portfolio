@@ -401,6 +401,7 @@ body {
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    padding-top: 0;
   }
 
   .header-shapes {
