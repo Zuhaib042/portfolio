@@ -113,6 +113,7 @@ body {
   max-width: 12rem;
   justify-content: space-between;
   padding-top: 0.8rem;
+  padding-top: 1rem;
 }
 
 .tags > li {
@@ -126,10 +127,6 @@ body {
 
 .form-ul li {
   list-style: none;
-}
-
-.hero-icons {
-  padding-top: 1rem;
 }
 
 .hero-icons li {
