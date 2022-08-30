@@ -276,15 +276,21 @@
                 <form class="form d-flex" action="https://formspree.io/f/xyyvzkvg" method="POST">
                     <ul class="form-ul d-flex flex-column">
                         <li>
-                            <input type="text" class="form-text" name="user_name" placeholder="Name" maxlength="30"
+                            <label for="user_name">
+                                <input type="text" class="form-text" name="user_name" placeholder="Name" maxlength="30"
                                 required>
+                            </label>
                         </li>
                         <li>
-                            <input type="email" class="form-email" name="user_email" placeholder="Email" required>
+                            <label for="user_email">
+                                <input type="email" class="form-email" name="user_email" placeholder="Email" required>
+                            </label>
                         </li>
                         <li>
-                            <textarea name="user_message" class="form-textarea" id="textarea"
+                            <label for="user_message">
+                                <textarea name="user_message" class="form-textarea" id="textarea"
                                 placeholder="Write your message here" maxlength="500" required></textarea>
+                            </label>
                         </li>
                         <li>
                             <button class="btn" type="submit">Get in Touch</button>
