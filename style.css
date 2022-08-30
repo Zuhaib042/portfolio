@@ -229,7 +229,7 @@ body {
   font-size: 17px;
   font-weight: 500;
   border-radius: 8px;
-  border: 1px solid var(--secondary-color);
+  border: 1px solid #5867e8;
   background-color: white;
   color: #5867e8;
   letter-spacing: 3%;
