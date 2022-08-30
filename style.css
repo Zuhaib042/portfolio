@@ -231,17 +231,18 @@ body {
   border-radius: 8px;
   border: 1px solid var(--secondary-color);
   background-color: white;
-  color: var(--primary-color);
+  color: #5867e8;
   letter-spacing: 3%;
   transition: all 0.4s;
 }
 
 .btn:hover {
   color: white;
-  background-color: var(--primary-color);
+  background-color: #5867e8;
 }
 
 .btn:active {
+  color: white;
   background-color: #2230d2;
 }
 
