@@ -241,6 +241,10 @@ body {
   background-color: #5867e8;
 }
 
+.btn-form:hover {
+  background-color: #2230d2;
+}
+
 .btn:active {
   color: white;
   background-color: #2230d2;
