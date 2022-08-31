@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
+    <title>My Portfolio home page</title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
             <a href="#" class="logo">
                 <p>Bonjour</p>
             </a>
-            <div><img src="./images/Union@2x.png" alt="icon_menu" id="menu">
+            <div><img src="./images/Union@2x.png" alt="icon menu" id="menu">
             </div>
             <ul class="nav-items list-none">
                 <li><a href="#portfolio"> Portfolio </a></li>
@@ -50,23 +50,23 @@
                         <ul class="hero-icons d-flex">
                             <li>
                                 <a target="_blank" href="https://twitter.com/Zuhaib042" rel="noopener noreferrer"><img
-                                        src="./images/twitter.svg" alt="twitter-logo"></a>
+                                        src="./images/twitter.svg" alt="twitter logo"></a>
                             </li>
                             <li>
                                 <a target="_blank" href="https://www.linkedin.com/in/zuhaib-amjad-488914234/"
-                                    rel="noopener noreferrer"><img src="./images/linkedin.svg" alt="linkedIn-logo"></a>
+                                    rel="noopener noreferrer"><img src="./images/linkedin.svg" alt="linkedIn logo"></a>
                             </li>
                             <li>
                                 <a href="#" rel="noopener noreferrer"><img src="./images/medium.svg"
-                                        alt="medium-logo"></a>
+                                        alt="medium logo"></a>
                             </li>
                             <li>
                                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/Zuhaib042"><img
-                                        src="./images/github.svg" alt="github-logo"></a>
+                                        src="./images/github.svg" alt="github logo"></a>
                             </li>
                             <li>
                                 <a href="#" rel="noopener noreferrer"><img src="./images/good.svg"
-                                        alt="angellist-logo"></a>
+                                        alt="angel list logo"></a>
                             </li>
                         </ul>
                     </div>
@@ -80,7 +80,7 @@
             <h2 class="works-title">My Projects</h2>
             <article class="d-flex flex-column card">
                 <div class="card-image">
-                    <img src="./images/portfolio-img4.jpg" alt="example-image1">
+                    <img src="./images/portfolio-img4.jpg" alt="tonic image">
                 </div>
                 <div class="card-content">
                     <div class="primary-text">
@@ -106,7 +106,7 @@
             </article>
             <article class="d-flex flex-column card reverse">
                 <div class="card-image">
-                    <img src="./images/portfolio-img1.jpg" alt="example-image2">
+                    <img src="./images/portfolio-img1.jpg" alt="Multi-post stories image">
                 </div>
                 <div class="card-content">
                     <div class="primary-text">
@@ -132,7 +132,7 @@
             </article>
             <article class="d-flex flex-column card">
                 <div class="card-image">
-                    <img src="./images/portfolio-img2.jpg" alt="example-image3">
+                    <img src="./images/portfolio-img2.jpg" alt="tonic image">
                 </div>
                 <div class="card-content">
                     <div class="primary-text">
@@ -158,7 +158,7 @@
             </article>
             <article class="d-flex flex-column card reverse">
                 <div class="card-image">
-                    <img src="./images/portfolio-img3.jpg" alt="example-image4">
+                    <img src="./images/portfolio-img3.jpg" alt="Multi-post stories image">
                 </div>
                 <div class="card-content">
                     <div class="primary-text">
@@ -210,23 +210,23 @@
                         <ul class="hero-icons d-flex">
                             <li>
                                 <a target="_blank" href="https://twitter.com/Zuhaib042" rel="noopener noreferrer"><img
-                                        src="./images/twitter.svg" alt="twitter-logo"></a>
+                                        src="./images/twitter.svg" alt="twitter logo"></a>
                             </li>
                             <li>
                                 <a target="_blank" href="https://www.linkedin.com/in/zuhaib-amjad-488914234/"
-                                    rel="noopener noreferrer"><img src="./images/linkedin.svg" alt="linkedIn-logo"></a>
+                                    rel="noopener noreferrer"><img src="./images/linkedin.svg" alt="linkedIn logo"></a>
                             </li>
                             <li>
                                 <a href="#" rel="noopener noreferrer"><img src="./images/medium.svg"
-                                        alt="medium-logo"></a>
+                                        alt="medium logo"></a>
                             </li>
                             <li>
                                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/Zuhaib042"><img
-                                        src="./images/github.svg" alt="github-logo"></a>
+                                        src="./images/github.svg" alt="github logo"></a>
                             </li>
                             <li>
                                 <a href="#" rel="noopener noreferrer"><img src="./images/good.svg"
-                                        alt="angellist-logo"></a>
+                                        alt="angel list logo"></a>
                             </li>
                         </ul>
                         <div class="about-action ">
@@ -276,18 +276,25 @@
                 <form class="form d-flex" action="https://formspree.io/f/xyyvzkvg" method="POST">
                     <ul class="form-ul d-flex flex-column">
                         <li>
-                            <input type="text" class="form-text" name="user_name" placeholder="Name" maxlength="30"
-                                required>
+                            <label for="user_name">
+                                <input type="text" class="form-text" id="user_name" name="user_name" placeholder="Name"
+                                    maxlength="30" required>
+                            </label>
                         </li>
                         <li>
-                            <input type="email" class="form-email" name="user_email" placeholder="Email" required>
+                            <label for="user_email">
+                                <input type="email" class="form-email" id="user_email" name="user_email"
+                                    placeholder="Email" required>
+                            </label>
                         </li>
                         <li>
-                            <textarea name="user_message" class="form-textarea" id="textarea"
-                                placeholder="Write your message here" maxlength="500" required></textarea>
+                            <label for="textarea">
+                                <textarea name="user_message" class="form-textarea" id="textarea"
+                                    placeholder="Write your message here" maxlength="500" required></textarea>
+                            </label>
                         </li>
                         <li>
-                            <button class="btn" type="submit">Get in Touch</button>
+                            <button class="btn btn-form" type="submit">Get in Touch</button>
                         </li>
                     </ul>
                 </form>
