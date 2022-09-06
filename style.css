@@ -174,9 +174,8 @@ body {
 
 .header-shapes {
   background-image: url(./images/header-shapes-mobile.svg);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
 }
 
 @media (min-width: 420px) {
@@ -197,7 +196,7 @@ body {
 }
 
 .hero-content {
-  padding-top: 5rem;
+  padding-top: 2.5rem;
   margin: 0 24px;
 }
 
@@ -225,7 +224,6 @@ body {
 
 .works {
   display: grid;
-  grid-template-columns: 1 / -1;
   margin: 114px 24px;
   row-gap: 44px;
 }
@@ -342,7 +340,6 @@ body {
 
 .about {
   display: grid;
-  grid-template-columns: 1 / -1;
   padding: 6rem 0;
   background-image: url(./images/base-about.svg);
   background-size: cover;
@@ -395,7 +392,6 @@ body {
   font-weight: 700;
   color: #fff;
   text-align: center;
-  vertical-align: center;
 }
 
 .form-content p {
@@ -440,6 +436,7 @@ body {
     height: 72px;
     z-index: 100;
     box-shadow: 0 1px 10px -5px grey;
+    position: sticky;
   }
 
   .logo {
@@ -457,6 +454,10 @@ body {
   .nav-items {
     display: flex;
     column-gap: 32px;
+  }
+
+  .overlay {
+    display: none;
   }
 
   .nav-items li a {
@@ -491,13 +492,13 @@ body {
   .header-shapes {
     background-image: url(./images/header-backN-desk.png);
     background-size: contain;
+    background-position-x: right;
     padding-top: 8rem;
     padding-bottom: 9rem;
   }
 
   .hero-content {
-    padding: 0;
-    margin: 100px 140px 0;
+    margin: 0 140px;
   }
 
   .hero-title {
