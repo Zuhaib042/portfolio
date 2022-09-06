@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #f7f7f9;
 }
 
@@ -39,12 +39,17 @@ body {
   height: 7vh;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   width: 100%;
   box-shadow: 0 1px 10px -5px grey;
   padding: 26px 24px;
   background-color: white;
 }
+
+/* .absolute {
+  color: #ffffff;
+  position: absolute;
+  z-index: 500000;
+} */
 
 .nav-items {
   display: none;
@@ -57,10 +62,93 @@ body {
   text-decoration: none;
 }
 
-#menu {
-  width: 2rem;
-  margin-top: 5px;
-  cursor: pointer;
+.hidden {
+  display: none;
+}
+
+.hamburger {
+  display: block;
+  z-index: 10;
+  height: 24px;
+  width: 24px;
+  position: relative;
+  outline: none;
+  border: 0;
+  background: transparent;
+  transition: all 0.5s;
+  margin-top: 7px;
+}
+
+.ham-top,
+.ham-mid,
+.ham-bottom {
+  width: 24px;
+  border-radius: 10px;
+  height: 3px;
+  position: absolute;
+  transform: rotate(0);
+  transition: all 0.5s;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+}
+
+.ham-mid {
+  transform: translateY(7px);
+}
+
+.ham-bottom {
+  transform: translateY(14px);
+}
+
+.initiate {
+  transform: rotate(90deg);
+  margin-top: 0;
+}
+
+.initiate .ham-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+  background-color: #ffffff;
+}
+
+.initiate .ham-mid {
+  display: none;
+}
+
+.initiate .ham-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  background-color: #ffffff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--primary-color);
+  opacity: 0.9;
+  backdrop-filter: blur(1rem);
+  padding-top: 106px;
+  padding-left: 28px;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.overlay li a {
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #ffffff;
+}
+
+.overlay li:nth-child(2) {
+  margin-top: 40px;
+}
+
+.overlay li:nth-child(3) {
+  margin-top: 40px;
 }
 
 .hero {
@@ -368,7 +456,7 @@ body {
     transform: rotateX(-180deg);
   }
 
-  #menu {
+  #hamburger-menu {
     display: none;
   }
 
@@ -385,7 +473,7 @@ body {
   }
 
   .nav-items li a::after {
-    content: "";
+    content: '';
     display: block;
     width: 0;
     height: 2px;

@@ -7,7 +7,7 @@ This is a Microverse Portfolio Project. I have created it initially with Mobile 
 ## Built With
 
 - Major languages
-  HTML and CSS
+  HTML, CSS and Javascript
 - Frameworks
   none
 - Technologies used
@@ -26,7 +26,7 @@ git clone https://github.com/Zuhaib042/portfolio.git
 
 ### Prerequisites
 
-Basic Knowledge of HTML and CSS
+Basic Knowledge of HTML and CSS and JS
 
 ### Install
 
