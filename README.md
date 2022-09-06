@@ -7,11 +7,15 @@ This is a Microverse Portfolio Project. I have created it initially with Mobile 
 ## Built With
 
 - Major languages
-  HTML, CSS and Javascript
+  HTML
+  CSS
+  Javascript  
 - Frameworks
   none
 - Technologies used
-  linters, Git , Github.
+  linters ( Webhint, Stylelint, Eslint)
+  Git and Github
+  Figma
 
 ## Live Demo
 
@@ -19,7 +23,7 @@ This is a Microverse Portfolio Project. I have created it initially with Mobile 
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy  up and running  with latest features, follow these simple example steps.
 
 Run
 git clone https://github.com/Zuhaib042/portfolio.git
@@ -44,6 +48,18 @@ you can make a portfolio website with this project.
 
 - GitHub: [@Zuhaib042](https://github.com/Zuhaib042)
 - Twitter: [@Zuhaib042](https://twitter.com/Zuhaib042)
+
+👤 **Author2**
+
+- GitHub: [@28919926](https://github.com/28919926)
+
+👤 **Author3**
+
+- GitHub:  (https://github.com/UsirusenIkon)
+
+👤 **Author4**
+
+- GitHub: [@Allenkeys] (https://github.com/Allenkeys)
 
 ## 🤝 Contributing
 
