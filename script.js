@@ -8,3 +8,12 @@ hamburger.addEventListener('click', () => {
   mobileMenu.classList.toggle('hidden');
   mobileMenu.classList.toggle('d-flex');
 });
+
+// mobile-menu links functionality
+links.forEach((link) => {
+  link.addEventListener('click', () => {
+    hamburger.classList.toggle('initiate');
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('d-flex');
+  });
+});
