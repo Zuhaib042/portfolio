@@ -15,14 +15,27 @@
             <a href="#" class="logo">
                 <p>Bonjour</p>
             </a>
-            <div><img src="./images/Union@2x.png" alt="icon menu" id="menu">
+            <div id="hamburger-menu">
+                <button id="hamburger" type="button" class="hamburger">
+                    <span class="ham-top"></span>
+                    <span class="ham-mid"></span>
+                    <span class="ham-bottom"></span>
+                </button>
             </div>
+
             <ul class="nav-items list-none">
                 <li><a href="#portfolio"> Portfolio </a></li>
                 <li><a href="#about"> About </a></li>
                 <li><a href="#contact"> Contact</a></li>
             </ul>
         </nav>
+
+        <ul id="menu" class="list-none overlay hidden">
+            <li class="mobileNav-links"><a href="#portfolio">Portfolio</a></li>
+            <li class="mobileNav-links"><a href="#about">About</a></li>
+            <li class="mobileNav-links"><a href="#contact">Contact</a></li>
+        </ul>
+
     </header>
     <main>
         <!-- hero section -->
@@ -301,6 +314,7 @@
             </section>
         </footer>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
