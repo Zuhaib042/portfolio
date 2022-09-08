@@ -35,6 +35,7 @@
   text-transform: capitalize;
   margin: 12px auto;
 }
+
 .project-header h2 {
   font-weight: 400;
   font-size: 32px;
@@ -141,6 +142,11 @@
 
   .project-header {
     display: flex;
+    justify-content: space-between;
   }
-  
+
+  .project-header-p {
+    width: 54%;
+    margin-top: 1rem;
+  }
 }

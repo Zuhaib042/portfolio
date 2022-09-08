@@ -127,13 +127,13 @@ function eachModal() {
   for (let i = 0; i < seeProjectBtn.length; i += 1) {
     seeProjectBtn[i].addEventListener('click', () => {
       allProjectModal[i].classList.add('active');
-      portfolio.appendChild(allProjectModal[i]);
+      sectionPortfolio.appendChild(allProjectModal[i]);
 
       const close = document.querySelectorAll('.modal-close');
       close.forEach((btn) => {
         btn.addEventListener('click', () => {
           btn.parentElement.parentElement.parentElement.classList.remove(
-            'active'
+            'active',
           );
         });
       });
