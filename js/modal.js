@@ -99,6 +99,8 @@ function modalWindow() {
   
   <header class="project-header">
   <p class="project-header-p">${work.description}</p>
+
+  <div class="header-desc">
   <ul class="set-stack">
   <li class="stack">${work.technology[0]}</li>
   <li class="stack">${work.technology[1]}</li>
@@ -109,6 +111,8 @@ function modalWindow() {
   <button class="btn mod" type="submit">see live<img class="btn-icon" src="../images/Icon.png" alt="check live version"></button>
   <button class="btn mod" type="submit">see source<img class="btn-icon" src="../images/github.png" alt="check live version"></button
   </div>
+  </div>
+  
   </header>
   </div>`;
     allWorks.push(popupWindow);

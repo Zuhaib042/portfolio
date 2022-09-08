@@ -138,4 +138,9 @@
   .sample.mod {
     max-height: 50%;
   }
+
+  .project-header {
+    display: flex;
+  }
+  
 }
