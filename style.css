@@ -43,7 +43,6 @@ body.active {
   position: fixed;
   top: 0;
   left: 0;
-  /* transform: translate(-50%, -50%); */
   width: 80%;
   height: 90%;
   border-radius: 5px;
@@ -51,31 +50,15 @@ body.active {
   background-color: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   z-index: 20;
-  /* background-color: transparent; */
   margin: 5% 10%;
   overflow-y: scroll;
   overflow-x: hidden;
-
-  /* overflow-y: scroll;
-  overflow-x: hidden;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  box-sizing: border-box;
-  background-color: transparent;
-  transform: scale(0);
-  transition: all 0.3s ease-in-out; */
 }
 
 .modal-content {
   background-color: var(--white-bg-color);
-  /* width: 343px; */
   z-index: 30;
   padding: 18px 16px;
-  /* box-sizing: border-box; */
   border-radius: 16px;
   margin: 40px auto;
 }
@@ -109,16 +92,6 @@ body.active {
   top: 0;
   left: 0;
   z-index: 10;
-
-  /* width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(193, 199, 208, 0.9);
-  filter: blur(4px);
-  display: none;
-  z-index: 1; */
 }
 
 .modal-img-container {
