@@ -9,6 +9,11 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f7f7f9;
+  overflow-x: hidden;
+}
+
+body.active {
+  overflow-y: hidden;
 }
 
 :root {
@@ -32,6 +37,102 @@ body {
 
 .list-none {
   list-style: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* transform: translate(-50%, -50%); */
+  width: 80%;
+  height: 90%;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  z-index: 20;
+  /* background-color: transparent; */
+  margin: 5% 10%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  /* overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  box-sizing: border-box;
+  background-color: transparent;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out; */
+}
+
+.modal-content {
+  background-color: var(--white-bg-color);
+  /* width: 343px; */
+  z-index: 30;
+  padding: 18px 16px;
+  /* box-sizing: border-box; */
+  border-radius: 16px;
+  margin: 40px auto;
+}
+
+.modal-title {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title h2 {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.modal-close {
+  font-size: 24px;
+  color: #67798e;
+}
+
+.modal-dec {
+  color: #344563;
+}
+
+.modal-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(193, 199, 208, 0.9);
+  filter: blur(4px);
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  /* width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(193, 199, 208, 0.9);
+  filter: blur(4px);
+  display: none;
+  z-index: 1; */
+}
+
+.modal-img-container {
+  border-radius: 10px;
+  margin: 12px 0;
+}
+
+.modal-img {
+  width: 100%;
+}
+
+.modal-btn {
+  height: 20px;
+  width: 100px;
 }
 
 #nav {
@@ -434,9 +535,11 @@ body {
   #nav {
     padding: 26px 80px;
     height: 72px;
-    z-index: 100;
+    z-index: 10;
     box-shadow: 0 1px 10px -5px grey;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   .logo {
