@@ -1,7 +1,7 @@
 const works = [
   {
     name: 'Tonic',
-    image: '../images/portfolio-img4.jpg',
+    image: './images/portfolio-img4.jpg',
     tags: ['CANOPY', 'Back End Dev', '2015'],
     live: '#',
     repository: '#',
@@ -12,7 +12,7 @@ const works = [
 
   {
     name: 'Multi-post Stories',
-    image: '../images/portfolio-img1.jpg',
+    image: './images/portfolio-img1.jpg',
     tags: ['CANOPY', 'Back End Dev', '2015'],
     see: '#',
     repository: '#',
@@ -22,7 +22,7 @@ const works = [
   },
   {
     name: 'Tonic',
-    image: '../images/portfolio-img2.jpg',
+    image: './images/portfolio-img2.jpg',
     tags: ['CANOPY', 'Back End Dev', '2015'],
     live: 'https://nedramrez.github.io/portfolio',
     repository: '#',
@@ -32,7 +32,7 @@ const works = [
   },
   {
     name: 'multi-post stories',
-    image: '../images/portfolio-img3.jpg',
+    image: './images/portfolio-img3.jpg',
     tags: ['CANOPY', 'Back End Dev', '2015'],
     live: '#',
     repository: '#',
@@ -108,8 +108,8 @@ function modalWindow() {
   </ul>
   <div class="rule"></div>
   <div class="btnflex">
-  <button class="btn mod" type="submit">see live<img class="btn-icon" src="../images/Icon.png" alt="check live version"></button>
-  <button class="btn mod" type="submit">see source<img class="btn-icon" src="../images/github.png" alt="check live version"></button
+  <button class="btn mod" type="submit">see live<img class="btn-icon" src="./images/Icon.png" alt="check live version"></button>
+  <button class="btn mod" type="submit">see source<img class="btn-icon" src="./images/github.png" alt="check live version"></button
   </div>
   </div>
   
