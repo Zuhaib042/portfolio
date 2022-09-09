@@ -1,4 +1,4 @@
-// mobile-menu variables
+// variables
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('menu');
 const links = document.querySelectorAll('.mobileNav-links');
@@ -19,4 +19,18 @@ links.forEach((link) => {
     mobileMenu.classList.toggle('hidden');
     mobileMenu.classList.toggle('d-flex');
   });
+});
+
+// client-side-validation
+const form = document.getElementById('form');
+const message = document.querySelector('.error-mesg');
+const emailValue = document.getElementById('email');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (/^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g.test(emailValue.value)) {
+    form.submit();
+    form.reset();
+  } else {
+    message.innerText = 'Email in lowercase is required';
+  }
 });

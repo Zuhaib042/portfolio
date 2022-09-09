@@ -410,6 +410,13 @@ body.active {
   margin-top: 2rem;
 }
 
+.error-mesg {
+  color: white;
+  border-radius: 3px;
+  background-color: red;
+  text-align: center;
+}
+
 .form-ul {
   row-gap: 18px;
 }
