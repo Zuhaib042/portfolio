@@ -132,9 +132,7 @@ function eachModal() {
       const close = document.querySelectorAll('.modal-close');
       close.forEach((btn) => {
         btn.addEventListener('click', () => {
-          btn.parentElement.parentElement.parentElement.classList.remove(
-            'active',
-          );
+          btn.parentElement.parentElement.parentElement.classList.remove('active');
         });
       });
     });

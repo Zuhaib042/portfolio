@@ -28,5 +28,9 @@ const form = document.getElementById('form');
 const message = document.querySelector('.error-mesg');
 form.addEventListener("submit",function (e){
   e.preventDefault();
-  
-})
+  if(/^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g.test(form.elements["user_email"].value)){
+    form.submit();
+   }else{
+     message.innerText = 'Email in lowercase is required';
+  }
+});
