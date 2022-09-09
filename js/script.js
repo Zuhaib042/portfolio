@@ -3,8 +3,6 @@ const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('menu');
 const links = document.querySelectorAll('.mobileNav-links');
 
-
-
 // mobile-menu functionality
 
 // // hamburger menu functionality
@@ -26,11 +24,15 @@ links.forEach((link) => {
 // client-side-validation
 const form = document.getElementById('form');
 const message = document.querySelector('.error-mesg');
-form.addEventListener("submit",function (e){
+form.addEventListener('submit', (e) => {
   e.preventDefault();
-  if(/^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g.test(form.elements["user_email"].value)){
+  if (
+    /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2, 4}$/g.test(
+      form.elements.user_email.value,
+    )
+  ) {
     form.submit();
-   }else{
-     message.innerText = 'Email in lowercase is required';
+  } else {
+    message.innerText = 'Email in lowercase is required';
   }
 });
