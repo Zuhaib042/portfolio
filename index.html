@@ -187,7 +187,7 @@
                     <p>If you have an application you are interested in developing, a feature that you need built or a
                         project that needs coding. I’d love to help with it </p>
                 </div>
-                <form class="form d-flex" action="https://formspree.io/f/xyyvzkvg" method="POST">
+                <form class="form d-flex" id="form" action="https://formspree.io/f/xyyvzkvg" method="POST">
                     <ul class="form-ul d-flex flex-column">
                         <li>
                             <label for="user_name">
@@ -196,9 +196,10 @@
                             </label>
                         </li>
                         <li>
-                            <label for="user_email">
-                                <input type="email" class="form-email" id="user_email" name="user_email"
-                                    placeholder="Email" required>
+                            <label for="user_email ">
+                                <input type="email" class="form-email d-flex flex-column" id="user_email"
+                                    name="user_email" placeholder="Email" required>
+                                <small class="error-mesg"></small>
                             </label>
                         </li>
                         <li>
