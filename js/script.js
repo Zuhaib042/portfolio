@@ -24,14 +24,12 @@ links.forEach((link) => {
 // client-side-validation
 const form = document.getElementById('form');
 const message = document.querySelector('.error-mesg');
+const emailValue = document.getElementById('email');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  if (
-    /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2, 4}$/g.test(
-      form.elements.user_email.value,
-    )
-  ) {
+  if (/^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g.test(emailValue.value)) {
     form.submit();
+    form.reset();
   } else {
     message.innerText = 'Email in lowercase is required';
   }
