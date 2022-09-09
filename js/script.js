@@ -24,15 +24,9 @@ links.forEach((link) => {
 });
 
 // client-side-validation
-const form = document.getElementById("form");
-const message = document.querySelector(".error-mesg");
-
-console.log(form["user_email"].value);
- form.addEventListener("submit",function (e){
-   e.preventDefault();
-   if(!form["user_email"].value.toLowerCase()){
-     form.submit();
-    }else{
-      message.innerText = "Email in lowercase is required";
-   }
- })
+const form = document.getElementById('form');
+const message = document.querySelector('.error-mesg');
+form.addEventListener("submit",function (e){
+  e.preventDefault();
+  
+})
