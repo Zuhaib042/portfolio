@@ -1,6 +1,9 @@
+// mobile-menu variables
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('menu');
 const links = document.querySelectorAll('.mobileNav-links');
+
+// mobile-menu functionality
 
 // // hamburger menu functionality
 hamburger.addEventListener('click', () => {

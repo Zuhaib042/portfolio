@@ -9,6 +9,11 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f7f7f9;
+  overflow-x: hidden;
+}
+
+body.active {
+  overflow-y: hidden;
 }
 
 :root {
@@ -62,7 +67,7 @@ body {
 
 .hamburger {
   display: block;
-  z-index: 10;
+  z-index: 2;
   height: 24px;
   width: 24px;
   position: relative;
@@ -114,13 +119,13 @@ body {
   background-color: #fff;
 }
 
-.tags > li {
+.bags li {
   background-color: var(--btn-background);
   border-radius: 8px;
   padding: 4px 12px;
   font-weight: 500;
   font-size: 12px;
-  color: var(--primary-color);
+  color: #6070ff;
 }
 
 .form-ul li {
@@ -165,7 +170,7 @@ body {
 
 .hero {
   height: 100vh;
-  background-image: url(./images/base-header.svg);
+  background-image: url(../images/base-header.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -173,7 +178,7 @@ body {
 }
 
 .header-shapes {
-  background-image: url(./images/header-shapes-mobile.svg);
+  background-image: url(../images/header-shapes-mobile.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -236,7 +241,6 @@ body {
 }
 
 .card {
-  border: 0.5px solid rgb(187, 187, 187);
   border-radius: 12px;
   background-color: white;
 }
@@ -262,7 +266,7 @@ body {
   color: var(--headings-color);
 }
 
-.primary-text p {
+.primary-text > p {
   margin: 8px 0;
   font-weight: 400;
   color: var(--text-color);
@@ -295,7 +299,7 @@ body {
   color: var(--text-light);
 }
 
-.tags {
+.bags {
   max-width: 203px;
   justify-content: space-between;
 }
@@ -341,7 +345,7 @@ body {
 .about {
   display: grid;
   padding: 6rem 0;
-  background-image: url(./images/base-about.svg);
+  background-image: url(../images/base-about.svg);
   background-size: cover;
   background-repeat: no-repeat;
   row-gap: 24px;
@@ -374,7 +378,7 @@ body {
 #footer {
   background-color: var(--primary-color);
   border-top-left-radius: 50px;
-  background-image: url(./images/form-background2.svg);
+  background-image: url(../images/form-background2.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: right;
@@ -434,9 +438,11 @@ body {
   #nav {
     padding: 26px 80px;
     height: 72px;
-    z-index: 100;
+    z-index: 1;
     box-shadow: 0 1px 10px -5px grey;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   .logo {
@@ -481,7 +487,7 @@ body {
   }
 
   .hero {
-    background-image: url(./images/header-back-desktop.svg);
+    background-image: url(../images/header-back-desktop.svg);
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -490,7 +496,7 @@ body {
   }
 
   .header-shapes {
-    background-image: url(./images/header-backN-desk.png);
+    background-image: url(../images/header-backN-desk.png);
     background-size: contain;
     background-position-x: right;
     padding-top: 8rem;
@@ -534,6 +540,7 @@ body {
   .card-image {
     margin: 24px;
     overflow: hidden;
+    width: 50%;
   }
 
   .card-image img {
@@ -548,9 +555,10 @@ body {
 
   .card-content {
     margin-top: 48px;
+    width: 50%;
   }
 
-  .tags {
+  .bags {
     margin-top: 24px;
   }
 
@@ -581,7 +589,7 @@ body {
   }
 
   #footer {
-    background-image: url(./images/form-back2-desktop.svg);
+    background-image: url(../images/form-back2-desktop.svg);
     background-position: center;
     background-size: contain;
   }
