@@ -52,3 +52,13 @@ function handleSubmit(e) {
 form.addEventListener('submit', (e) => {
   handleSubmit(e);
 });
+
+// getting data back on window load
+window.addEventListener('load', () => {
+  const dataB = JSON.parse(localStorage.getItem('data'));
+  if (dataB) {
+    nameFull.value = dataB.name;
+    email.value = dataB.email;
+    textMessage.value = dataB.message;
+  }
+});
