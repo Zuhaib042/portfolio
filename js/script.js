@@ -21,11 +21,26 @@ links.forEach((link) => {
   });
 });
 
-// client-side-validation
+// client-side-validation and local storage data
 const form = document.getElementById('form');
 const message = document.querySelector('.error-mesg');
+const nameFull = document.getElementById('user_name');
 const email = document.getElementById('email');
-form.addEventListener('submit', (e) => {
+const textMessage = document.getElementById('textarea');
+
+// save data in local storage
+function saveData() {
+  const obj = {
+    name: nameFull.value,
+    email: email.value,
+    message: textMessage.value,
+  };
+  localStorage.setItem('data', JSON.stringify(obj));
+}
+form.addEventListener('submit', saveData);
+
+// handle Submit
+function handleSubmit(e) {
   e.preventDefault();
   if (/^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g.test(email.value)) {
     form.submit();
@@ -33,15 +48,7 @@ form.addEventListener('submit', (e) => {
   } else {
     message.innerText = 'Email in lowercase is required';
   }
+}
+form.addEventListener('submit', (e) => {
+  handleSubmit(e);
 });
-
-// local storage
-const nameFull = document.getElementById('user_name').value;
-const valueEmail = email.value;
-const textMessage = document.getElementById('textarea').value;
-
-const object = {name: nameFull, email: valueEmail, message: textMessage};
-const local = localStorage.setItem('data', object);
-function saveData() {}
-
-// const objectStore = JSON.stringify(object);
