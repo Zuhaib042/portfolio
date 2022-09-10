@@ -37,7 +37,6 @@ function saveData() {
   };
   localStorage.setItem('data', JSON.stringify(obj));
 }
-form.addEventListener('submit', saveData);
 
 // handle Submit
 function handleSubmit(e) {
@@ -52,6 +51,7 @@ function handleSubmit(e) {
 form.addEventListener('submit', (e) => {
   handleSubmit(e);
 });
+form.addEventListener('submit', saveData);
 
 // getting data back on window load
 window.addEventListener('load', () => {
