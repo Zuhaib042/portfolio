@@ -42,6 +42,8 @@ you can make a portfolio website with this project.
 
 ### Deployment
 
+[Zuhaib's Portfolio](https://zuhaib042.github.io/portfolio/)
+
 ## Authors
 
 👤 **Author1**
