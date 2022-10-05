@@ -1,6 +1,7 @@
 .btn.mod {
   display: flex;
   gap: 12px;
+  text-decoration: none;
 }
 
 .btnflex {

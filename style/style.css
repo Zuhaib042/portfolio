@@ -141,6 +141,7 @@ body.active {
   position: absolute;
   top: 0;
   left: 0;
+  flex-direction: column;
   min-height: 100vh;
   width: 100%;
   background-color: var(--primary-color);
@@ -148,7 +149,6 @@ body.active {
   backdrop-filter: blur(1rem);
   padding-top: 106px;
   padding-left: 28px;
-  flex-direction: column;
   align-self: flex-end;
 }
 

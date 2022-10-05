@@ -1,5 +1,6 @@
 // variables
 const hamburger = document.getElementById('hamburger');
+const body = document.querySelector('body');
 const mobileMenu = document.getElementById('menu');
 const links = document.querySelectorAll('.mobileNav-links');
 
@@ -10,6 +11,7 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('initiate');
   mobileMenu.classList.toggle('hidden');
   mobileMenu.classList.toggle('d-flex');
+  body.classList.toggle('active');
 });
 
 // mobile-menu links functionality
@@ -18,6 +20,7 @@ links.forEach((link) => {
     hamburger.classList.toggle('initiate');
     mobileMenu.classList.toggle('hidden');
     mobileMenu.classList.toggle('d-flex');
+    body.classList.toggle('active');
   });
 });
 

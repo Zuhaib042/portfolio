@@ -1,34 +1,35 @@
 const works = [
   {
-    name: 'Tonic',
-    image: './images/portfolio-img4.jpg',
-    tags: ['CANOPY', 'Back End Dev', '2015'],
-    live: '#',
-    repository: '#',
+    name: 'Hum Style Awards 2022',
+    image: './images/humStyle1.jpg',
+
+    tags: ['Hum tv', 'Front End Dev', '2022'],
+    live: 'https://zuhaib042.github.io/capstone-html-css/',
+    repository: 'https://github.com/Zuhaib042/capstone-html-css.git',
     technology: ['html', 'css', 'javascript'],
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, odio adipisci! Pariatur nulla cumque tempore.',
+      'It is my first Microverse Capstone project. it is a two page website where i have applied my html, css and javascript skills.',
   },
 
   {
-    name: 'Multi-post Stories',
-    image: './images/portfolio-img1.jpg',
-    tags: ['CANOPY', 'Back End Dev', '2015'],
-    see: '#',
-    repository: '#',
+    name: 'Awesome Books',
+    image: './images/awesomeBooks2.png',
+    tags: ['Books Data', 'Front End Dev', '2022'],
+    live: 'https://zuhaib042.github.io/Awesome-books/',
+    repository: 'https://github.com/Zuhaib042/Awesome-books.git',
     technology: ['html', 'css', 'javascript'],
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium! Unde porro debitis neque?',
+      'It is first week project of microverse Javascript module. it is a simple website where user can add and remove books. the webpage will store data in local storage and will display the data from it.',
   },
   {
-    name: 'Tonic',
-    image: './images/portfolio-img2.jpg',
-    tags: ['CANOPY', 'Back End Dev', '2015'],
-    live: 'https://nedramrez.github.io/portfolio',
-    repository: '#',
-    technology: ['html', 'css', 'javascript'],
+    name: 'To-Do List',
+    image: './images/todolist.png',
+    tags: ['To-Do', 'Front End Dev', '2022'],
+    live: 'https://zuhaib042.github.io/toDoList-minimalist/dist/',
+    repository: 'https://github.com/Zuhaib042/toDoList-minimalist.git',
+    technology: ['html', 'css', 'javascript', 'webpack'],
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat distinctio hic ea similique.',
+      'It is a simple yet powerful to do list app in which you can add daily to-do tasks. it would save all the data and changes in local storage and track your daily tasks whether you have completed them or not.',
   },
   {
     name: 'multi-post stories',
@@ -36,7 +37,7 @@ const works = [
     tags: ['CANOPY', 'Back End Dev', '2015'],
     live: '#',
     repository: '#',
-    technology: ['html', 'css', 'javascript'],
+    technology: ['html', 'css', 'javascript', 'ruby'],
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae delectus eveniet libero suscipit!',
   },
@@ -46,6 +47,9 @@ const sectionPortfolio = document.querySelector('.works');
 
 function projectsAll() {
   works.forEach((work) => {
+    let techs = work.technology;
+    const items = techs.forEach((item) => console.log(item));
+    // console.log(items);
     const portfolioCard = document.createElement('div');
     portfolioCard.classList.add('skills');
     portfolioCard.innerHTML = `<article class="d-flex flex-column card">
@@ -65,9 +69,9 @@ function projectsAll() {
          <p>${work.description}</p>
      </div>
      <ul class="bags d-flex list-none">
-         <li class="tags-li">${work.technology[0]}</li>
-         <li class="tags-li">${work.technology[1]}</li>
-         <li class="tags-li">${work.technology[2]}</li>
+       ${work.technology
+         .map((item) => `<li class="tags-li">${item}</li>`)
+         .join('')}  
      </ul>
      <div class="action">
          <button type="button" class="btn project button_project-1" data-tab="1">See Project</button>
@@ -95,21 +99,25 @@ function modalWindow() {
   </ul>
   </div>
   
-  <img class="sample mod" src='${work.image}' alt="multi-purpose stories project snapshoot">
+  <img class="sample mod" src='${
+    work.image
+  }' alt="multi-purpose stories project snapshoot">
   
   <header class="project-header">
   <p class="project-header-p">${work.description}</p>
 
   <div class="header-desc">
   <ul class="set-stack">
-  <li class="stack">${work.technology[0]}</li>
-  <li class="stack">${work.technology[1]}</li>
-  <li class="stack">${work.technology[2]}</li>
+  ${work.technology.map((tech) => `<li class="stack">${tech}</li>`).join('')}
   </ul>
   <div class="rule"></div>
   <div class="btnflex">
-  <button class="btn mod" type="submit">see live<img class="btn-icon" src="./images/Icon.png" alt="check live version"></button>
-  <button class="btn mod" type="submit">see source<img class="btn-icon" src="./images/github.png" alt="check live version"></button
+  <a href="${
+    work.live
+  }" class="btn mod" type="submit">see live<img class="btn-icon" src="./images/Icon.png" alt="check live version"></a>
+  <a href="${
+    work.repository
+  }" class="btn mod" type="submit">see source<img class="btn-icon" src="./images/github.png" alt="check live version"></a
   </div>
   </div>
   
@@ -132,7 +140,9 @@ function eachModal() {
       const close = document.querySelectorAll('.modal-close');
       close.forEach((btn) => {
         btn.addEventListener('click', () => {
-          btn.parentElement.parentElement.parentElement.classList.remove('active');
+          btn.parentElement.parentElement.parentElement.classList.remove(
+            'active'
+          );
         });
       });
     });
