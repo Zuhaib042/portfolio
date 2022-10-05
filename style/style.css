@@ -300,7 +300,9 @@ body.active {
 }
 
 .bags {
-  max-width: 203px;
+  flex-wrap: wrap;
+  gap: 7px;
+  max-width: 223px;
   justify-content: space-between;
 }
 
@@ -551,7 +553,8 @@ body.active {
   }
 
   .card-image img {
-    height: 448px;
+    height: 100%;
+    width: 100%;
     border-radius: 8px;
     transition: all 0.7s;
   }
