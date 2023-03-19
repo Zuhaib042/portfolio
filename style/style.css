@@ -375,6 +375,10 @@ body.active {
   color: var(--icons-color);
 }
 
+.skills-list {
+  list-style: none;
+}
+
 /* form section */
 
 #footer {
@@ -441,6 +445,34 @@ body.active {
   height: 170px;
   font-size: 15px;
   font-weight: 400;
+}
+
+/* collapsible */
+
+.collapsible {
+  color: white;
+  cursor: pointer;
+}
+
+/* .active,
+.collapsible:hover {
+  background-color: #555;
+} */
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  background-color: #f7f7f9;
+  color: #344563;
+}
+.content > li {
+  padding: 2px 0;
+}
+
+.resume {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {

@@ -1,5 +1,27 @@
 const works = [
   {
+    name: 'Cherry Rooms',
+    image: './images/cherry-rooms.jpg',
+
+    tags: ['Cherry Rooms', 'Full Stack Dev', '2023'],
+    live: 'https://cherryrooms.netlify.app/',
+    repository: 'https://github.com/adel-gu/Cherry-Rooms-front-end',
+    technology: ['React', 'Rails', 'Postgresql', 'Tailwind CSS'],
+    description:
+      'Cherry Rooms is a front-end React project designed for the purpose of booking rooms in hotels, motels, or any other accommodation service. This project provides an intuitive and user-friendly interface that allows users to easily browse and reserve rooms based on their preferences and availability. The project is built using React, HTML, CSS, and JavaScript, with the use of APIs to fetch data from the backend.',
+  },
+  {
+    name: 'Countries Catalog',
+    image: './images/countries.jpg',
+
+    tags: ['Countries Catalog', 'Front End Dev', '2022'],
+    live: 'https://thriving-crisp-6883e8.netlify.app/',
+    repository: 'https://github.com/Zuhaib042/Countries-Catalog',
+    technology: ['React', 'Redux', 'JavaScript', 'Tailwind CSS'],
+    description:
+      'Countries Catalog is a Single Page App built with react.It fetches data from https://restcountries.com/ api and shows all the countries of the world. It also show their population on homepage and upon clicking on any country"s card, it takes to the detail page and shows more info about that specific country.In this web app I used Redux as a state management library. And for testing, I used react-testing-library with Jest.',
+  },
+  {
     name: 'Hum Style Awards 2022',
     image: './images/humStyle1.jpg',
 
@@ -9,6 +31,16 @@ const works = [
     technology: ['html', 'css', 'javascript'],
     description:
       'It is my first Microverse Capstone project. it is a two page website where i have applied my html, css and javascript skills.',
+  },
+  {
+    name: 'Space Travelers" Hub',
+    image: './images/space.jpg',
+    tags: ['Space X', 'Front End Dev', '2022'],
+    live: 'https://symphonious-marshmallow-1c5d68.netlify.app/',
+    repository: 'https://github.com/Zuhaib042/Space-Travelers-Hub',
+    technology: ['React', 'Redux', 'JavaScript', 'SpaceX api'],
+    description:
+      'Space Travelers" Hub is an SPA app to view and read about the SpaceX latest rockets and missions form SpaceX API. You can reserve rockets and join their missions. We built this app with React and we used Redux as a state management library. for testing we used react-testing-library with Jest.',
   },
 
   {
@@ -30,16 +62,6 @@ const works = [
     technology: ['html', 'css', 'javascript', 'webpack'],
     description:
       'It is a simple yet powerful to do list app in which you can add daily to-do tasks. it would save all the data and changes in local storage and track your daily tasks whether you have completed them or not.',
-  },
-  {
-    name: 'multi-post stories',
-    image: './images/portfolio-img3.jpg',
-    tags: ['CANOPY', 'Back End Dev', '2015'],
-    live: '#',
-    repository: '#',
-    technology: ['html', 'css', 'javascript', 'ruby'],
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae delectus eveniet libero suscipit!',
   },
 ];
 
@@ -67,8 +89,8 @@ function projectsAll() {
      </div>
      <ul class="bags d-flex list-none">
        ${work.technology
-    .map((item) => `<li class="tags-li">${item}</li>`)
-    .join('')}  
+         .map((item) => `<li class="tags-li">${item}</li>`)
+         .join('')}  
      </ul>
      <div class="action">
          <button type="button" class="btn project button_project-1" data-tab="1">See Project</button>
@@ -97,8 +119,8 @@ function modalWindow() {
   </div>
   
   <img class="sample mod" src='${
-  work.image
-}' alt="multi-purpose stories project snapshoot">
+    work.image
+  }' alt="multi-purpose stories project snapshoot">
   
   <header class="project-header">
   <p class="project-header-p">${work.description}</p>
@@ -109,12 +131,12 @@ function modalWindow() {
   </ul>
   <div class="rule"></div>
   <div class="btnflex">
-  <a href="${
-  work.live
-}" class="btn mod" type="submit">see live<img class="btn-icon" src="./images/Icon.png" alt="check live version"></a>
-  <a href="${
-  work.repository
-}" class="btn mod" type="submit">see source<img class="btn-icon" src="./images/github.png" alt="check live version"></a
+  <a target="_blank" href="${
+    work.live
+  }" class="btn mod" type="submit">see live<img class="btn-icon" src="./images/Icon.png" alt="check live version"></a>
+  <a target="_blank" href="${
+    work.repository
+  }" class="btn mod" type="submit">see source<img class="btn-icon" src="./images/github.png" alt="check live version"></a
   </div>
   </div>
   
