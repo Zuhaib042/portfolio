@@ -7,8 +7,7 @@ const works = [
     live: 'https://cherryrooms.netlify.app/',
     repository: 'https://github.com/adel-gu/Cherry-Rooms-front-end',
     technology: ['React', 'Rails', 'Postgresql', 'Tailwind CSS'],
-    description:
-      'Cherry Rooms is a front-end React project designed for the purpose of booking rooms in hotels, motels, or any other accommodation service. This project provides an intuitive and user-friendly interface that allows users to easily browse and reserve rooms based on their preferences and availability. The project is built using React, HTML, CSS, and JavaScript, with the use of APIs to fetch data from the backend.',
+    description: `Cherry Rooms is a front-end React project designed for the purpose of booking rooms in hotels, motels, or any other accommodation service. This project provides an intuitive and user-friendly interface that allows users to easily browse and reserve rooms based on their preferences and availability. The project is built using React, HTML, CSS, and JavaScript, with the use of APIs to fetch data from the backend.`,
   },
   {
     name: 'Countries Catalog',
@@ -18,8 +17,7 @@ const works = [
     live: 'https://thriving-crisp-6883e8.netlify.app/',
     repository: 'https://github.com/Zuhaib042/Countries-Catalog',
     technology: ['React', 'Redux', 'JavaScript', 'Tailwind CSS'],
-    description:
-      'Countries Catalog is a Single Page App built with react.It fetches data from https://restcountries.com/ api and shows all the countries of the world. It also show their population on homepage and upon clicking on any country"s card, it takes to the detail page and shows more info about that specific country.In this web app I used Redux as a state management library. And for testing, I used react-testing-library with Jest.',
+    description: `Countries Catalog is a Single Page App built with react.It fetches data from 'https://restcountries.com/api' and shows all the countries of the world. It also show their population on homepage and upon clicking on any country's card, it takes to the detail page and shows more info about that specific country.In this web app I used Redux as a state management library. And for testing, I used react-testing-library with Jest.`,
   },
   {
     name: 'Hum Style Awards 2022',
@@ -39,8 +37,7 @@ const works = [
     live: 'https://symphonious-marshmallow-1c5d68.netlify.app/',
     repository: 'https://github.com/Zuhaib042/Space-Travelers-Hub',
     technology: ['React', 'Redux', 'JavaScript', 'SpaceX api'],
-    description:
-      'Space Travelers" Hub is an SPA app to view and read about the SpaceX latest rockets and missions form SpaceX API. You can reserve rockets and join their missions. We built this app with React and we used Redux as a state management library. for testing we used react-testing-library with Jest.',
+    description: `Space Travelers' Hub is an SPA app to view and read about the SpaceX latest rockets and missions form SpaceX API. You can reserve rockets and join their missions. We built this app with React and we used Redux as a state management library. for testing we used react-testing-library with Jest.`,
   },
 
   {
