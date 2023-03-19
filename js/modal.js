@@ -20,13 +20,24 @@ const works = [
     description: `Countries Catalog is a Single Page App built with react.It fetches data from 'https://restcountries.com/api' and shows all the countries of the world. It also show their population on homepage and upon clicking on any country's card, it takes to the detail page and shows more info about that specific country.In this web app I used Redux as a state management library. And for testing, I used react-testing-library with Jest.`,
   },
   {
+    name: 'Tv-Zone',
+    image: './images/tv-zome.jpg',
+
+    tags: ['Tv-Zone', 'Front End Dev', '2022'],
+    live: 'https://laiifuu.github.io/TV-Zone/dist/',
+    repository: 'https://github.com/laiifuu/TV-Zone',
+    technology: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
+    description:
+      'Tv Zone is a website that displays information about TV shows. It also allows you to like the shows, comment on the shows, and make reservations. The data about the shows is being fetched from the TVMaze API. The likes, comments and reservations are being preserved in the external Involvement API.',
+  },
+  {
     name: 'Hum Style Awards 2022',
     image: './images/humStyle1.jpg',
 
     tags: ['Hum tv', 'Front End Dev', '2022'],
     live: 'https://zuhaib042.github.io/capstone-html-css/',
     repository: 'https://github.com/Zuhaib042/capstone-html-css.git',
-    technology: ['html', 'css', 'javascript'],
+    technology: ['HTML', 'CSS', 'JavaScript'],
     description:
       'It is my first Microverse Capstone project. it is a two page website where i have applied my html, css and javascript skills.',
   },
@@ -46,7 +57,7 @@ const works = [
     tags: ['Books Data', 'Front End Dev', '2022'],
     live: 'https://zuhaib042.github.io/Awesome-books/',
     repository: 'https://github.com/Zuhaib042/Awesome-books.git',
-    technology: ['html', 'css', 'javascript'],
+    technology: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
     description:
       'It is first week project of microverse Javascript module. it is a simple website where user can add and remove books. the webpage will store data in local storage and will display the data from it.',
   },
@@ -56,7 +67,7 @@ const works = [
     tags: ['To-Do', 'Front End Dev', '2022'],
     live: 'https://zuhaib042.github.io/toDoList-minimalist/dist/',
     repository: 'https://github.com/Zuhaib042/toDoList-minimalist.git',
-    technology: ['html', 'css', 'javascript', 'webpack'],
+    technology: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
     description:
       'It is a simple yet powerful to do list app in which you can add daily to-do tasks. it would save all the data and changes in local storage and track your daily tasks whether you have completed them or not.',
   },
