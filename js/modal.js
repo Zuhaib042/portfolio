@@ -17,7 +17,7 @@ const works = [
     live: 'https://thriving-crisp-6883e8.netlify.app/',
     repository: 'https://github.com/Zuhaib042/Countries-Catalog',
     technology: ['React', 'Redux', 'JavaScript', 'Tailwind CSS'],
-    description: `Countries Catalog is a Single Page App built with react.It fetches data from 'https://restcountries.com/api' and shows all the countries of the world. It also show their population on homepage and upon clicking on any country's card, it takes to the detail page and shows more info about that specific country.In this web app I used Redux as a state management library. And for testing, I used react-testing-library with Jest.`,
+    description: `Countries Catalog is a Single Page App built with react. It fetches data from 'https://restcountries.com/api' and shows all the countries of the world. It also shows their population on the homepage by clicking on any country's card, and takes you to a detailed page with more information about the specific country. In this web app I used Redux as a state management library, and for testing, I used react-testing-library with Jest.`,
   },
   {
     name: 'Tv-Zone',
@@ -39,16 +39,16 @@ const works = [
     repository: 'https://github.com/Zuhaib042/capstone-html-css.git',
     technology: ['HTML', 'CSS', 'JavaScript'],
     description:
-      'It is my first Microverse Capstone project. it is a two page website where i have applied my html, css and javascript skills.',
+      'This is my first Microverse Capstone project, it is a two page website where I have applied my HTML, CSS and Javascript skills.',
   },
   {
-    name: 'Space Travelers" Hub',
+    name: '&quot;Space Travelers&quot; Hub',
     image: './images/space.jpg',
     tags: ['Space X', 'Front End Dev', '2022'],
     live: 'https://symphonious-marshmallow-1c5d68.netlify.app/',
     repository: 'https://github.com/Zuhaib042/Space-Travelers-Hub',
     technology: ['React', 'Redux', 'JavaScript', 'SpaceX api'],
-    description: `Space Travelers' Hub is an SPA app to view and read about the SpaceX latest rockets and missions form SpaceX API. You can reserve rockets and join their missions. We built this app with React and we used Redux as a state management library. for testing we used react-testing-library with Jest.`,
+    description: `&apos;Space Travelers&apos; Hub is an SPA app to view and read about the SpaceX latest rockets and missions form SpaceX API. You can reserve rockets and join their missions. We built this app with React and we used Redux as a state management library. For testing we used react-testing-library with Jest.`,
   },
 
   {
@@ -59,7 +59,7 @@ const works = [
     repository: 'https://github.com/Zuhaib042/Awesome-books.git',
     technology: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
     description:
-      'It is first week project of microverse Javascript module. it is a simple website where user can add and remove books. the webpage will store data in local storage and will display the data from it.',
+      'This is a project from the first week of Microverse&apos;s Javascript module. It is a simple website where user can add and remove books. The webpage will store data in local storage and will display the data from it.',
   },
   {
     name: 'To-Do List',
@@ -69,7 +69,7 @@ const works = [
     repository: 'https://github.com/Zuhaib042/toDoList-minimalist.git',
     technology: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
     description:
-      'It is a simple yet powerful to do list app in which you can add daily to-do tasks. it would save all the data and changes in local storage and track your daily tasks whether you have completed them or not.',
+      'This is a simple yet powerful to do list app in which you can add daily to-do tasks. This will save all the data and changes in local storage and track your daily tasks whether you have completed them or not.',
   },
 ];
 
